@@ -7,11 +7,19 @@
 
 
 //1-dare la possibilità di inserire il nome
-let nome_utente = prompt('inserisci il tuo nome')
+let nome_utente = prompt('inserisci il tuo nome');
 
 //2-dare la possibilità di inserire il cognome
-let cognome_utente = prompt('inserisci il tuo cognome')
+let cognome_utente = prompt('inserisci il tuo cognome');
 
 //3 - Dare la possibilità di inserire il colore preferito
-let colore_preferito = prompt('inserisci il tuo colore ')
+let colore_preferito = prompt('inserisci il tuo colore ');
+
+//4 - Concatenare i valori delle variabili concatenando anche il numero 21 a fine stringa 
+let PwGenerate = nome_utente+cognome_utente+colore_preferito + "21";
+
+console.log(PwGenerate);
+
+//5 - Visualizzare a schermo in HTML
+document.getElementById('password').innerHTML = PwGenerate;
 
